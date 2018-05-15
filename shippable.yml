@@ -1,0 +1,14 @@
+language: none
+
+runtime:
+  nodePool: dynamic__x86_64__Ubuntu_14_04__c4_xlarge
+  
+build:
+  pre_ci_boot:
+    image_name: drydock/u14
+    image_tag: master
+    pull: true
+    
+  ci:
+    - echo "Hello"
+  
